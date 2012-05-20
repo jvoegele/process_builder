@@ -50,7 +50,7 @@ class ProcessBuilder
   # resourcename is one of the resources understood by Process.setrlimit,
   # such as :rlimit_core for example.
   # The keys of this Hash will be used to construct the options, so setting
-  # rlimit[:core] would result in an option named :rlimit_core.
+  # \rlimit[:core] would result in an option named :rlimit_core.
   attr_reader :rlimit
 
   # Build a new process description using the given args as the process
@@ -164,6 +164,7 @@ class ProcessBuilder
 
 protected
 
+  # :nodoc:
   def copy_fields(other)
     @command_line = array_copy(other.command_line)
     @directory = Pathname(other.directory )if other.directory
@@ -202,6 +203,9 @@ private
     result
   end
 
+  # Builder object that is passed to the block given to the ProcessBuilder.build
+  # and ProcessBuilder.copy methods. The Builder object has writable attributes
+  # allowing the block to customize the attributes of the process.
   class Builder < ProcessBuilder
     attr_writer :command_line, :directory, :environment, :pgroup,
                 :rlimit_resourcename, :umask, :close_others
