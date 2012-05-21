@@ -11,7 +11,7 @@ require 'open3'
 # and the documentation for Process.spawn and Open3 for full details of
 # the arguments that each understands.
 class ProcessBuilder
-  VERSION = '1.0.0'
+  VERSION = '1.0.1'
 
   # The command and arguments passed to Process.spawn
   attr_reader :command_line
