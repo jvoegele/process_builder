@@ -3,12 +3,12 @@ $:.push File.expand_path("../lib", __FILE__)
 require "process_builder"
 
 Gem::Specification.new do |s|
-  s.name        = "process-builder"
+  s.name        = "process_builder"
   s.version     = ProcessBuilder::VERSION
   s.authors     = ["Jason Voegele"]
   s.email       = ["jason@jvoegele.com"]
-  s.homepage    = "https://github.com/jvoegele/process-builder"
-  s.summary     = "Simple object-oriented wrapper around Process.spawn"
+  s.homepage    = "https://github.com/jvoegele/process_builder"
+  s.summary     = "Simple object-oriented wrapper around Process.spawn and Open3"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")

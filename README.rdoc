@@ -1,4 +1,4 @@
-= process-builder
+= ProcessBuilder
 
 Simple object-oriented wrapper around Ruby's Process.spawn and Open3 library.
 
@@ -7,7 +7,7 @@ used to spawn and interact with an external process.
 
 == Usage
 
-  require 'process-builder'
+  require 'process_builder'
 
   # Build a process description with the ProcessBuilder.build method.
   process = ProcessBuilder.build('oggenc', 'track01.cdda.wav') do |builder|

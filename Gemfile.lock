@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    process-builder (0.5.0)
+    process_builder (1.1.0)
 
 GEM
   remote: http://rubygems.org/
@@ -20,5 +20,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  process-builder!
+  process_builder!
   rspec
